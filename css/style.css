@@ -308,6 +308,7 @@ button:focus {
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
         letter-spacing: 2.1px;
+       	margin-top: 180px;
         margin-bottom: 20px; }
       .home_banner_area .banner_inner .banner_content h2 {
         margin-top: 0px;
@@ -323,7 +324,19 @@ button:focus {
         max-width: 680px;
         font-size: 14px;
         line-height: 26px;
-        margin: 0px auto 45px; }
+        margin: 0px auto 15px; }
+      .home_banner_area .banner_inner .banner_content ul {
+        color: #666666;
+        font-family: "Roboto", sans-serif;
+        max-width: 680px;
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0px auto 40px; }
+       .home_banner_area .banner_inner .banner_content ul b {
+       	color: #000000;
+       	font-family: "Roboto", sans-serif;
+       	font-size: 14px;
+        font-weight: bold; }
       .home_banner_area .banner_inner .banner_content .banner_map_img {
         text-align: right; }
 
@@ -2711,6 +2724,15 @@ h6 {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     margin-bottom: 40px; }
+  .welcome_text .education_list {
+  	color: #000000;
+    max-width: 495px;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin-bottom: 40px; }
+  .welcome_text .education_list span {
+  	color: #777777;}
 
 .wel_item {
   border: 1px solid #eeeeee;
