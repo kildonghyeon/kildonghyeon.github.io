@@ -296,7 +296,7 @@ button:focus {
   .home_banner_area .banner_inner {
     width: 100%; }
     .home_banner_area .banner_inner .home_left_img {
-      padding-top: 195px; }
+      padding-top: 70px; }
     .home_banner_area .banner_inner .col-lg-6 {
       vertical-align: middle;
       align-self: center; }
@@ -2711,7 +2711,7 @@ h6 {
     margin-top: -30px; }
 
 .welcome_text {
-  margin-top: 45px; }
+  margin-top: 30px; }
   .welcome_text h4 {
     color: #222222;
     font-family: "Heebo", sans-serif;
