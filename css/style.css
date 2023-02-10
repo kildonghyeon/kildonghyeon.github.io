@@ -2893,7 +2893,7 @@ h6 {
       font-size: 21px;
       font-family: "Heebo", sans-serif;
       font-weight: bold;
-      color: #222222;
+      color: #52524b;
       margin-bottom: 5px;
       transition: all 300ms linear 0s;
       text-transform: uppercase;
@@ -2995,7 +2995,40 @@ h6 {
     text-transform: uppercase; }
   .testi_item a {
     color: #ffc000; }
-
+.projectInfo li {
+    margin-bottom: 7px;
+    color: #777777;
+    font-weight: normal;
+    font-size: 14px; }
+.projectInfo li span {
+	font-size: 14px;
+	color: #222222;
+	font-weight: 500;
+	width: 97px;
+	display: inline-block;
+}
+.develop td {
+	text-align: center; 
+	vertical-align: middle;
+}
+.myDevelop .title td {
+	color: #222222;
+	font-weight: 500;
+}
+.myDevelop .content td {
+	font-size: 13.5px;
+}
+.myDevelop .content td a {
+	color: black;
+	text-decoration: underline;
+	margin-left: 6%	
+}
+.myDevelop .content td a:hover {
+	color: #056ed0;
+	font-weight: bold;
+	text-decoration: underline;
+	
+}
 /* End Testimonials Area css
 ============================================================================================ */
 /*---------------------------------------------------- */

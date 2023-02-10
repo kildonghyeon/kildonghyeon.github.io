@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>Ronin Multi</title>
+        <title>백엔드 개발자 길동현</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -27,7 +27,9 @@
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+						<a class="navbar-brand logo_h" href="index.html">
+							<span style="font-family: BMHANNAPro; font-size: 30px; font-weight: bold;">KilDongHyeon</span>
+						</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -36,9 +38,9 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">Services</a>
+								<li class="nav-item active"><a class="nav-link" href="#home-section">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#education-section">Education</a></li> 
+								<li class="nav-item"><a class="nav-link" href="services.html">Project</a>
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
 									<ul class="dropdown-menu">
@@ -89,24 +91,117 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="left_img">
-								<img class="img-fluid" src="img/gallery/portfolio_details.jpg" alt="">
+								<img class="img-fluid" src="img/gallery/Moda_main.png" alt="">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="portfolio_right_text">
-								<h4>Lavendar ambient colorlib</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+								<h4>MODA: 편의점 행사 정보 정리 사이트</h4>
+								<p>
+									모다(MODA)는 모두, 모으다라는 뜻이 있는 단어로 여러 편의점들의 행사 정보들을 한 곳에 모아 이용자가 보다
+									더 편하게 정보를 열람할 수 있는 커뮤니티성 웹사이트를 목표로 만든 Spring Framework 팀프로젝트입니다.
+								</p>
 								<ul class="list">
-									<li><span>Rating</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
-									<li><span>Client</span>:  colorlib</li>
-									<li><span>Website</span>:  colorlib.com</li>
-									<li><span>Completed</span>:  17 Aug 2018</li>
+									<li><span>프로젝트 방식</span>:  Spring MVC</li>
+									<li><span>수행기간</span>:  2022-11 ~ 2023-02</li>
+									<li><span>github</span>:  <a href="https://github.com/kildonghyeon/springConn" target="_blank">https://github.com/kildonghyeon/springConn</a>
+									<li><span>Website</span>:  <a href="http://localhost:8080/CVSWeb/" target="_blank">http://localhost:8080/CVSWeb/</a>
 								</ul>
 							</div>
 						</div>
 					</div>
-       				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-       				<p>Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+       				<h5 style="color: black;">프로젝트 소개</h5>
+       				<ul class="projectInfo">
+       					<li><span>수행인원</span>:  4명
+       					<li><span>담당파트</span>:  행사, 자유게시판 / 웹 크롤링 데이터 수집 전반 / 유지보수 및 보완</li>
+       					<li>
+       						<span>개발 주요 사항</span> - Jsoup 라이브러리를 이용한 각 편의점 행사상품, 이벤트, 위치정보 등 웹크롤링<br/>
+       						<span></span> - 웹크롤링을 통해 가져온 데이터 후처리 및 자동 업로드 기능 구현<br/>
+       						<span></span> - Kakao API와 연동해서 모든 편의점 위치 검색<br/>
+       					</li>
+       				</ul><br/>
+       				<h5 style="color: black;">개발환경</h5>
+       				<table class="table" border="1" style="color: black;">
+					    <tr class="table-secondary develop" align = "center">
+							<td>SCRIPT</td22>
+							<td>DATABASE</td>
+							<td>PROGRAMMING LANGUAGE</td>
+							<td>FRAMEWORK</td>
+							<td>IDE</td>
+							<td>ETC</td>
+					    </tr>
+					    <tr class="develop" align="center">
+							<td>
+								JSP, HTML, CSS(BootStrap),<br/>
+								JavaScript(jQuery)
+							</td>
+							<td>Oracle XE 11g</td>
+							<td>Java 11</td>
+							<td>Spring</td>
+							<td>Eclipse (STS 3.9.18)</td>
+							<td>
+								Ajax, MyBatis, EL/JSTL, Jsoup,<br>
+								Apache Commons FileUpload,<br/>
+								JSON-simple, KakaoMap API, ...
+							</td>
+					    </tr>
+       				</table><br/>
+       				<h5 style="color: black;">담당구현내용</h5>
+       				<table class="table myDevelop">
+       					<tr class="title">
+       						<td width="50%">자유게시판</td>
+       						<td>행사게시판</td>
+       					</tr>
+       					<tr class="content">
+       						<td>
+	       						<ul>
+	       							<li>글쓰기, 수정, 삭제 기능 구현</li>
+	       							<li>글쓰기, 수정 시 Ajax를 사용하여 빈 칸 체크기능 구현</li>
+	       							<li>게시글 클릭 시, 조회수 증가와 동시에 상세페이지로 이동</li>
+	       							<li>관리자의 경우 게시글 작성 시, 공지글을 올릴 수 있도록 체크박스 추가</li>
+	       							<li>글 검색기능 구현</li>
+	       							<li>댓글, 대댓글 기능 구현</li>
+	       							<li>부적절한 게시글, 댓글의 경우 회원들이 신고 가능하도록 신고버튼 구현</li>
+	       						</ul>
+		       					<a href="index.html">내용 상세보기</a>
+       						</td>
+       						<td>
+	       						<ul>
+	       							<li>전반적인 내용은 자유게시판과 동일</li>
+	       							<li>관리자 계정일 경우만 글쓰기 기능을 사용할 수 있도록 코드작성</li>
+	       							<li>사진첨부기능 구현</li>
+	       							<li>카테고리와 검색어에 따른 검색기능 구현</li>
+	       							<li>잘못된 정보가 올라올 시, 회원들이 오류신고가 가능하도록 신고문구 수정</li>
+	       						</ul>
+		       					<a href="index.html">내용 상세보기</a>
+       						</td>
+       					</tr>
+       				</table>
+       				<table class="table myDevelop">
+       					<tr class="title">
+       						<td width="50%">웹크롤링</td>
+       						<td>유지보수 및 보완</td>
+       					</tr>
+       					<tr class="content">
+       						<td>
+	       						<ul>
+	       							<li>행사상품 => 상품명, 상품가격, 행사유형, 상품이미지을 크롤링하여 받아옴</li>
+	       							<li>이벤트=> 이벤트제목, 이벤트내용, 이벤트이미지, 이벤트기간을 크롤링하여 받아옴</li>
+	       							<li>위치정보 => 지점명, 주소을 크롤링하여 받아옴</li>
+	       						</ul>
+	       						<a href="index.html">내용 상세보기</a>
+       						</td>
+       						<td>
+	       						<ul>
+	       							<li>로그인, 로그아웃 시, 무조건 메인페이지로 이동 => 로그인, 로그아웃을 한 페이지로 이동</li>
+	       							<li>로그인 체크 방식 동기 처리 => 비동기 처리로 수정</li>
+	       							<li>자동 행사 등록 시 중복되는 데이터 상관없이 추가 => 중복되지 않는 데이터만 추가되도록 수정</li>
+	       							<li></li>
+	       						</ul>
+	       						<a href="index.html">내용 상세보기</a>
+       						</td>
+       					</tr>
+       				</table>
         		</div>
         	</div>
         </section>
