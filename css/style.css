@@ -2907,6 +2907,15 @@ h6 {
     background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+    .projects_item .projects_text h4#blackbg {
+      font-size: 21px;
+      font-family: "Heebo", sans-serif;
+      font-weight: bold;
+      color: #f0f0ee;
+      margin-bottom: 5px;
+      transition: all 300ms linear 0s;
+      text-transform: uppercase;
+      cursor: pointer; }
 
 /* End Projects Area css
 ============================================================================================ */
@@ -3140,3 +3149,18 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+.details_titles {
+	color: black;
+	font-weight: 380;
+	padding-left: 1.5%;
+}
+.portfolio_details_area button {
+	float: right;
+}
+.ftco-section {
+  padding: 7em 0;
+  position: relative; }
+  @media (max-width: 767.98px) {
+    .ftco-section {
+      padding: 6em 0; } }
