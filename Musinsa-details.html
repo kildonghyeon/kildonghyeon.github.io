@@ -70,121 +70,108 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="left_img">
-								<img class="img-fluid" src="img/moda/Moda_main.png" alt="">
+								<img class="img-fluid" src="img/project_detail/musinsaLogo.jpg" alt="">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="portfolio_right_text">
 								<h4>Musinsa 랭킹 데이터 분석</h4>
 								<p>
-									무신사 좋아요
+									평소 관심이 많던 대한민국 최대 규모의 온라인 편집숍인 무신사 사이트의 상품 랭킹페이지를
+									크롤링, 데이터 분석을 함으로써 구매 시 어떤 브랜드가 가장 합리적인지를 판단하는 데 도움이
+									될 수 있을 지 그래프 및 표로 볼 수 있다면 좋겠다 생각하고 시작하게 된 데이터 분석 프로젝트입니다.
 								</p>
 								<ul class="list">
-									<li><span>프로젝트 방식</span>:  Spring MVC</li>
-									<li><span>수행기간</span>:  2022-11 ~ 2023-02</li>
-									<li><span>github</span>:  <a href="https://github.com/kildonghyeon/springConn" target="_blank">https://github.com/kildonghyeon/springConn</a>
-									<li><span>Website</span>:  <a href="http://localhost:8080/CVSWeb/" target="_blank">http://localhost:8080/CVSWeb/</a>
+									<li><span>프로젝트 방식</span>:  Python</li>
+									<li><span>수행기간</span>:  2023-1 ~ 2023-02</li>
+									<li><span>github</span>:  <a href="https://github.com/kildonghyeon/Musinsa_Analysis" target="_blank">https://github.com/kildonghyeon/Musinsa_Analysis</a>
 								</ul>
 							</div>
 						</div>
 					</div>
        				<h5 style="color: black;">프로젝트 소개</h5>
        				<ul class="projectInfo">
-       					<li><span>수행인원</span>:  4명
-       					<li><span>담당파트</span>:  행사, 자유게시판 / 웹 크롤링 데이터 수집 전반 / 유지보수 및 보완</li>
        					<li>
-       						<span>개발 주요 사항</span> - Jsoup 라이브러리를 이용한 각 편의점 행사상품, 이벤트, 위치정보 등 웹크롤링<br/>
-       						<span></span> - 웹크롤링을 통해 가져온 데이터 후처리 및 자동 업로드 기능 구현<br/>
-       						<span></span> - Kakao API와 연동해서 모든 편의점 위치 검색<br/>
+       						<span>주요 사항</span> - BeautifulSoup, requests 라이브러리를 통한 웹크롤링으로 분석할 데이터수집<br/>
+       						<span></span> - 후처리한 데이터를 바탕으로 만들어낸 WordCloud<br/>
+       						<span></span> - ggplot, matplotlib, seaborn을 활용한 데이터 시각화 작업<br/>
        					</li>
        				</ul><br/>
        				<h5 style="color: black;">개발환경</h5>
        				<table class="table" border="1" style="color: black;">
 					    <tr class="table-secondary develop" align = "center">
-							<td>SCRIPT</td22>
-							<td>DATABASE</td>
 							<td>PROGRAMMING LANGUAGE</td>
-							<td>FRAMEWORK</td>
-							<td>IDE</td>
+							<td>OPEN SOURCE</td>
 							<td>ETC</td>
 					    </tr>
 					    <tr class="develop" align="center">
+							<td>Python 3.6.13</td>
+							<td>Jupyter Notebook, Anaconda</td>
 							<td>
-								JSP, HTML, CSS(BootStrap),<br/>
-								JavaScript(jQuery)
-							</td>
-							<td>Oracle XE 11g</td>
-							<td>Java 11</td>
-							<td>Spring</td>
-							<td>Eclipse (STS 3.9.18)</td>
-							<td>
-								Ajax, MyBatis, EL/JSTL, Jsoup,<br>
-								Apache Commons FileUpload,<br/>
-								JSON-simple, KakaoMap API, ...
+								BS4, Numpy, Pandas, Requests,<br/>
+								Plotnine, Matplotlib, Seaborn, WordCloud
 							</td>
 					    </tr>
        				</table><br/>
-       				<h5 style="color: black;">담당구현내용</h5>
+       				<h5 style="color: black;">작업 내용</h5>
        				<table class="table myDevelop">
        					<tr class="title">
-       						<td width="50%">자유게시판</td>
-       						<td>행사게시판</td>
+       						<td width="50%">웹 크롤링과 데이터 후처리</td>
+       						<td>WordCloud</td>
        					</tr>
        					<tr class="content">
        						<td>
 	       						<ul>
-	       							<li>글쓰기, 수정, 삭제 기능 구현</li>
-	       							<li>글쓰기, 수정 시 Ajax를 사용하여 빈 칸 체크기능 구현</li>
-	       							<li>게시글 클릭 시, 조회수 증가와 동시에 상세페이지로 이동</li>
-	       							<li>관리자의 경우 게시글 작성 시, 공지글을 올릴 수 있도록 체크박스 추가</li>
-	       							<li>글 검색기능 구현</li>
-	       							<li>댓글, 대댓글 기능 구현</li>
-	       							<li>부적절한 게시글, 댓글의 경우 회원들이 신고 가능하도록 신고버튼 구현</li>
+	       							<li>requests, BeautifulSoup 라이브러리를 사용해 무신사 URL 호출, HTML 파싱</li>
+	       							<li>순위, 제품, 브랜드, 가격, 좋아요 수의 값을 가져옴</li>
+	       							<li>카테고리 별 리스트 생성 후 하나의 데이터프레임으로 생성</li>
+	       							<li>'Rank', 'Good', 'brand', 'price', 'like'라는 이름의 총 5개의 컬럼으로 이루어진<br/>데이터프레임이 되도록 후처리 작업</li>
 	       						</ul>
        						</td>
        						<td>
 	       						<ul>
-	       							<li>전반적인 내용은 자유게시판과 동일</li>
-	       							<li>관리자 계정일 경우만 글쓰기 기능을 사용할 수 있도록 코드작성</li>
-	       							<li>사진첨부기능 구현</li>
-	       							<li>카테고리와 검색어에 따른 검색기능 구현</li>
-	       							<li>잘못된 정보가 올라올 시, 회원들이 오류신고가 가능하도록 신고문구 수정</li>
+	       							<li>데이터프레임 내 가장 많이 랭킹에 오른 브랜드 기준으로 제작</li>
+	       							<li>Mask: 무신사 모델 클리핑 마스크</li>
+	       							<li>Font: 배민한나체 Pro</li>
+	       							<li>Color: 랜덤한 Grey 색상</li>
 	       						</ul>
        						</td>
        					</tr>
        				</table>
        				<table class="table myDevelop">
        					<tr class="title">
-       						<td width="50%">웹크롤링</td>
-       						<td>유지보수 및 보완</td>
+       						<td width="50%">분석하고자 한 타이틀</td>
+       						<td>시각화</td>
        					</tr>
        					<tr class="content">
        						<td>
 	       						<ul>
-	       							<li>행사상품 => 상품명, 상품가격, 행사유형, 상품이미지을 크롤링하여 받아옴</li>
-	       							<li>이벤트=> 이벤트제목, 이벤트내용, 이벤트이미지, 이벤트기간을 크롤링하여 받아옴</li>
-	       							<li>위치정보 => 지점명, 주소을 크롤링하여 받아옴</li>
+	       							<li>가장 많이 랭킹에 오른 브랜드</li>
+	       							<li>위 타이틀의 상위권 Top20의 상품수 비교</li>
+	       							<li>상품수 상위권 Top20의 최소, 평균, 최대 금액 비교</li>
+	       							<li>평균 좋아요 수 상위권 Top20 브랜드의 가격비교</li>
+	       							<li>상품수 상위권 Top20의 가격대 별 평균 좋아요 수 비교</li>
 	       						</ul>
        						</td>
        						<td>
 	       						<ul>
-	       							<li>로그인, 로그아웃 시, 무조건 메인페이지로 이동 => 로그인, 로그아웃을 한 페이지로 이동</li>
-	       							<li>로그인 체크 방식 동기 처리 => 비동기 처리로 수정</li>
-	       							<li>회원 프로필사진, 자기소개 수정 기능 구현</li>
-	       							<li>자동 행사 등록 시 중복되는 데이터 상관없이 추가 => 중복되지 않는 데이터만 추가되도록 수정</li>
+	       							<li>ggplot을 사용한 막대 그래프와 다중 막대 그래프</li>
+	       							<li>matplotlib와 seaborn을 사용한 파이 차트</li>
+	       							<li>matplotlib을 사용한 막대 그래프</li>
 	       						</ul>
        						</td>
        					</tr>
        				</table>
        				<div align="right">
-       					<a class="banner_btn" href="./pdfFiles/MODA_Portfolio.pdf" download="MODA_Portfolio.pdf" target="_blank">PDF</a>
+       					<a class="banner_btn" href="./pdfFiles/Musinsa_Analysis.pdf" download="Musinsa_Analysis.pdf" target="_blank">PDF</a>
+		       			<a class="white_bg_btn" href="./index.html#projects-section">돌아가기</a>
        				</div>
         		</div>
         	</div>
         </section>
         <!--================End Portfolio Details Area =================-->
         
-        <!--================Footer Area =================-->
+	<!--================Footer Area =================-->
         <footer class="footer_area p_120">
         	<div class="container">
         		<div class="row footer_inner">
@@ -198,37 +185,6 @@
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
-        				</aside>
-        			</div>
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget news_widget">
-        					<div class="f_title">
-        						<h3>Newsletter</h3>
-        					</div>
-        					<p>Stay updated with our latest trends</p>
-        					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
-                            </div>
-        				</aside>
-        			</div>
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3>Follow Me</h3>
-        					</div>
-        					<p>Let us be social</p>
-        					<ul class="list">
-        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
-        					</ul>
         				</aside>
         			</div>
         		</div>
